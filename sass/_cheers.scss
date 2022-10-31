@@ -1,0 +1,66 @@
+.cheers_box {
+  display: flex;
+  justify-content: space-around;
+}
+.card {
+  width: 350px;
+  height: 382px;
+  background-color: #0e8784;
+  transform: translateY(-150px) translateX(15px);
+  border-radius: 8px;
+}
+.cheers_img {
+  text-align: center;
+  width: 71px;
+  height: 72px;
+  margin-left: 136px;
+  margin-top: 72px;
+}
+.cheers_h5 {
+  color: white;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 900;
+}
+.cheers_p {
+  color: white;
+  margin: 0 auto;
+  font-size: 20px;
+  font-weight: 400;
+  width: 255px;
+  height: 78px;
+}
+@media (max-width: 480px) {
+  .cheers_box {
+    display: flex !important;
+    flex-direction: column !important ;
+    margin-left: 100px;
+    transform: translateY(-300px);
+  }
+  .card {
+    width: 279px;
+    height: 382px;
+    margin-top: 30px;
+    transform: translateY(-250px) translateX(-42px);
+  }
+}
+@media (max-width: 769px) and (min-width: 482px) {
+  .cheers_box {
+    transform: translateY(-250px);
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center;
+    align-items: center;
+  }
+  .cheers_img {
+    transform: translateX(-70px);
+  }
+  .card {
+    margin-top: 30px;
+    padding-bottom: 30px;
+    width: 573px;
+    height: 180px;
+    display: flex;
+    justify-content: space-around;
+  }
+}

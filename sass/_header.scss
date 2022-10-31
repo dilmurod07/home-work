@@ -1,0 +1,42 @@
+.header_li {
+  list-style: none;
+  
+}
+a {
+  text-decoration: none;
+  color: #83888f;
+  &:hover {
+    color: #333d4b;
+  }
+}
+.header_box {
+  display: flex;
+  justify-content: space-between;
+}
+ul {
+  display: flex;
+  gap: 30px;
+  &:hover {
+    color: white;
+  }
+}
+.maxsus {
+  display: none;
+}
+@media (max-width: 480px) {
+  .header_li {
+    display: none;
+  }
+  .maxsus {
+    display: inline-block;
+    color: #333d4b;
+    margin-top: 12px;
+    margin-right: 40px;
+  }
+  .header_left {
+    width: 163px;
+    height: 18px;
+    margin-top: 34px;
+    margin-left: 40px;
+  }
+}
